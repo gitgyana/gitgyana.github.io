@@ -1,0 +1,103 @@
+body {
+    background-color: #94A684;
+    margin: 0;
+    font-family: 'Inconsolata', monospace;
+    font-size: larger;
+}
+
+#logo {
+    position: fixed;
+    height: 15em;
+    top: 40%;
+    left: 55%;
+    object-fit: cover;
+    float:right;
+}
+
+#infos {
+    background-color: #FAF2D3;
+    margin-left: 3%;
+    padding: 20px 0;
+    height: 100%;
+    width: 60%;
+}
+
+#infos > .brackets {
+    font-weight: bold;
+    color: #176B87;
+    margin: 1em;
+}
+
+#mainBlock {
+    padding: 0 10%;
+    margin-right: 2em;
+}
+
+.block {
+    display: flex;
+    gap: 10px;
+    margin: 0.5em 0;
+}
+
+.heading, .texts {  margin: 0;  }
+
+.title {
+    margin: 0;
+    color: #176B87;
+}
+
+.details {
+    color: #219C90;
+    width: 80%;
+}
+
+.brackets {
+    margin: 0;
+    color: #176B87;
+}
+
+.lists {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.lists li::before {
+    content: ": "; 
+    font-weight: bolder;
+    color: #176B87 
+}
+
+a {
+    color: inherit;
+    font-style: italic;
+    font-family: 'Inconsolata', monospace;
+}
+
+#description {
+    /* font-family: 'Nova Mono', monospace; */
+    /* font-family: 'Charmonman', cursive; */
+    position: fixed;
+    right: 5rem;
+    top: 3%;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+    width: 10em;
+    color: #004225;
+}
+
+@media (max-width: 480px) {
+    #logo { height: 10em;   }
+}
+
+@media (min-width: 481px) and (max-width: 1300px) {
+    #logo { height: 10em;   }
+}
+
+@media (min-width: 1301px) and (max-width: 1600px) {
+    #logo { height: 15em;   }
+}
+
+@media (min-width: 1601px) {
+    #logo { height: 20em;   }
+}
