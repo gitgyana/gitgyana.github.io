@@ -7,6 +7,7 @@
     <link rel="icon" href="assets/imgs/GP_LOGO_1.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!--    https://fontawesome.com/icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -14,7 +15,6 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-<!--                <span>GP</span>-->
                 <a href="#home" data-section="home">
                     <img src="assets/imgs/GP_LOGO_1.png" alt="Logo" class="nav-logo-img">
                 </a>
@@ -84,7 +84,7 @@
                             <div class="stat-label">Projects</div>
                         </div>
                     </a>
-                    <a href="https://www.credly.com/users/gyana-priyadarshi/badges#credly" class="nav-link" data-section="certification">
+                    <a href="https://www.credly.com/users/gyana-priyadarshi/badges#credly" target="_blank" class="nav-link" data-section="certification">
                         <div class="stat-item">
                             <div class="stat-number">Certified</div>
                             <div class="stat-label">SAP Certified Associate</div>
@@ -185,14 +185,7 @@
                         <span class="skill-tag">SAP GUI</span>
                     </div>
                 </div>
-<!--                <div class="skill-category">-->
-<!--                    <h3>Databases</h3>-->
-<!--                    <div class="skill-tags">-->
-<!--                        <span class="skill-tag">Oracle DB</span>-->
-<!--                        <span class="skill-tag">SQLite</span>-->
-<!--                        <span class="skill-tag">SQL</span>-->
-<!--                    </div>-->
-<!--                </div>-->
+
                 <div class="skill-category">
                     <h3>Tools</h3>
                     <div class="skill-tags">
@@ -226,6 +219,9 @@
                         <div class="project-links">
                             <a href="https://github.com/gitgyana/VnDyn" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://vn-dyn-nu.vercel.app/" target="_blank" class="project-link">
+                                <i class="fa-solid fa-circle-play"></i>
                             </a>
                         </div>
                     </div>
@@ -285,6 +281,9 @@
                             <a href="https://github.com/gitgyana/ginger" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i>
                             </a>
+                            <a href="https://ginger-beta.vercel.app/" target="_blank" class="project-link">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </a>
                         </div>
                     </div>
                     <a href="https://ginger-beta.vercel.app/">
@@ -322,7 +321,7 @@
                         </a>
                         <div class="project-links">
                             <a href="https://github.com/gitgyana?tab=repositories" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
+                                <i class="fa-solid fa-circle-play"></i>
                             </a>
                         </div>
                     </div>
@@ -339,12 +338,12 @@
 <!--                    <div class="project-header">-->
 <!--                        <h3>Another Project Title</h3>-->
 <!--                        <div class="project-links">-->
-<!--                            <span class="project-link placeholder-link" title="Add your GitHub link">-->
+<!--                            <span class="project-link placeholder-link" title="Add GitHub link">-->
 <!--                                <i class="fab fa-github"></i>-->
 <!--                            </span>-->
 <!--                        </div>-->
 <!--                    </div>-->
-<!--                    <p class="project-description">Another placeholder for your projects. Edit the JavaScript data to add your real projects and remove these placeholders.</p>-->
+<!--                    <p class="project-description">Another placeholder for projects. Edit the JavaScript data to add real projects and remove these placeholders.</p>-->
 <!--                    <div class="project-tech">-->
 <!--                        <span class="tech-tag placeholder-tag">Framework</span>-->
 <!--                        <span class="tech-tag placeholder-tag">Database</span>-->
@@ -376,21 +375,25 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="achievement-category">
-                    <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                    <h3><i class="fa-solid fa-check-double"></i> Certifications</h3>
                     <div class="achievement-list">
-                        <div class="achievement-item">
-                            <h4>SAP Certified Associate</h4>
-                            <p>Back-End Developer – ABAP Cloud</p>
-                        </div>
-                        <div class="achievement-item">
-                            <h4>Google Cloud Community Day</h4>
-                            <p>Bhubaneswar 2025</p>
-                        </div>
+                        <a href="https://www.credly.com/badges/d32ee989-1b29-465b-8864-fca8e5a16ce1" target="_blank">
+                            <div class="achievement-item">
+                                <h4>SAP Certified Associate</h4>
+                                <p>Back-End Developer – ABAP Cloud</p>
+                            </div>
+                        </a>
+                        <a href="https://gdgcloud.codenomix.com//view-cert.php?id=230" target="_blank">
+                            <div class="achievement-item">
+                                <h4>Google Cloud Community Day</h4>
+                                <p>Bhubaneswar 2025</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                
+
                 <div class="achievement-category">
                     <h3><i class="fas fa-briefcase"></i> Internships</h3>
                     <div class="achievement-list">
@@ -427,28 +430,30 @@
                         </div>
                         <div class="copy-tooltip">Click to copy</div>
                     </div>
-<!--                    -->
-<!--                    <div class="contact-item" data-copy="+91">-->
-<!--                        <div class="contact-icon">-->
-<!--                            <i class="fas fa-phone"></i>-->
-<!--                        </div>-->
-<!--                        <div class="contact-details">-->
-<!--                            <h4>Phone</h4>-->
-<!--                            <p>+91</p>-->
-<!--                        </div>-->
-<!--                        <div class="copy-tooltip">Click to copy</div>-->
-<!--                    </div>-->
+                    <a href="https://www.linkedin.com/in/gyanapriyadarshi/" target="_blank" title="LinkedIn">
+                        <div class="contact-item" data-copy="https://www.linkedin.com/in/gyanapriyadarshi/">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <p>in/gyanapriyadarshi</p>
+                            </div>
+                            <div class="copy-tooltip">Click to redirect</div>
+                        </div>
+                    </a>
                 </div>
-                
+
                 <div class="social-links">
                     <a href="https://github.com/gitgyana/" target="_blank" class="social-link" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/gyanapriyadarshi/" target="_blank" class="social-link" title="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
+                    <a href="https://www.instagram.com/gyana.meta/" target="_blank" class="social-link" title="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
                     <a href="https://www.unstop.com/u/gyanapri45385/" target="_blank" class="social-link" title="Unstop">
-                        <i class="fas fa-trophy"></i>
+<!--                        <i class="fas fa-trophy"></i>-->
+                        <span class="unstop-icon"></span>
                     </a>
                 </div>
             </div>
