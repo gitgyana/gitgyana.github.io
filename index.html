@@ -4,144 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gyana Priyadarshi</title>
-    <link rel="icon" href="assets/imgs/GP_LOGO_1.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<!--    https://fontawesome.com/icons-->
+    <!--    https://fontawesome.com/icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Background Animation Container -->
+    <div class="bg-animation">
+        <canvas id="particles-canvas"></canvas>
+        <div class="floating-shapes"></div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home" data-section="home">
-                    <img src="assets/imgs/GP_LOGO_1.png" alt="Logo" class="nav-logo-img">
-                </a>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link" data-section="home">Home</a>
-                <a href="#about" class="nav-link" data-section="about">About</a>
-                <a href="#education" class="nav-link" data-section="education">Education</a>
-                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
-                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
-                <a href="#achievements" class="nav-link" data-section="achievements">Achievements</a>
-                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+    <nav class="nav">
+        <div class="nav__logo">
+            <a href="https://www.gyana.org.in/" target="_parent">
+                <img src="assets/imgs/GP_LOGO_1.png" alt="Logo" class="nav-logo-img">
+            </a>
+        </div>
+        <ul class="nav__links">
+            <li><a href="#home" class="nav__link">Home</a></li>
+            <li><a href="#about" class="nav__link">About</a></li>
+            <li><a href="#education" class="nav__link">Education</a></li>
+            <li><a href="#skills" class="nav__link">Skills</a></li>
+            <li><a href="#projects" class="nav__link">Projects</a></li>
+            <li><a href="#achievements" class="nav__link">Achievements</a></li>
+            <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__toggle">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="floating-shape shape-1"></div>
-            <div class="floating-shape shape-2"></div>
-            <div class="floating-shape shape-3"></div>
-            <div class="floating-shape shape-4"></div>
-            <div class="floating-shape shape-5"></div>
-            <div class="floating-shape shape-6"></div>
-        </div>
-        <div class="hero-content">
-            <h1 class="hero-title">Gyana Priyadarshi</h1>
-            <p class="hero-tagline">Just a guy gaining knowledge for the fun of it</p>
-            <div class="hero-subtitle">
-                <span class="animated-text" id="animated-text">Building the Future</span>
+        <div class="hero__content">
+            <h1 class="hero__title">
+                <span class="hero__name">Gyana Priyadarshi</span>
+            </h1>
+            <p class="hero__subtitle">Just a guy gaining knowledge for the fun of it</p>
+            <div class="hero__typing">
+                <span class="typing-text"></span>
+                <span class="cursor">|</span>
             </div>
-            <div class="hero-location">
-                <i class="fas fa-map-marker-alt"></i>
+            <div class="hero__location">
+                <span class="location-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </span>
                 <span>Khordha, India</span>
             </div>
-            <div class="hero-cta">
-                <a href="#projects" class="btn btn--primary">View My Work</a>
-                <a href="#contact" class="btn btn--outline">Get In Touch</a>
+            <div class="hero__actions">
+                <a href="#projects" class="btn btn--outline hero__btn">View My Work</a>
+                <a href="#contact" class="btn btn--outline hero__btn">Get In Touch</a>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
+        <div class="hero__scroll">
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-arrow"></div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section about-section">
+    <section id="about" class="about">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">About Me</h2>
-                <div class="section-subtitle">Getting to know me</div>
+                <p class="section-subtitle">Getting to know me</p>
             </div>
-            <div class="about-content">
-                <div class="about-text">
+            <div class="about__content">
+                <div class="about__text">
                     <p>Enthusiastic MCA student with a strong foundation in Python, web development, and software engineering, seeking a challenging role in a reputable organization. Building creative web and mobile applications is my strength. Solving real world problems and always eager to learn and grow with an organization wherever I will work.</p>
                 </div>
-                <div class="about-stats">
-                    <a href="#projects" class="nav-link" data-section="projects">
-                        <div class="stat-item">
-                            <div class="stat-number">15+</div>
-                            <div class="stat-label">Projects</div>
-                        </div>
-                    </a>
-                    <a href="https://www.credly.com/users/gyana-priyadarshi/badges#credly" target="_blank" class="nav-link" data-section="certification">
-                        <div class="stat-item">
-                            <div class="stat-number">Certified</div>
-                            <div class="stat-label">SAP Certified Associate</div>
-                            <div class="stat-label">Back-End Developer - ABAP Cloud</div>
-                        </div>
-                    </a>
-                    <div class="stat-item">
-                        <div class="stat-number">2+</div>
-                        <div class="stat-label">Internships at IITs</div>
+                <div class="about__stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Projects</div>
                     </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="4">0</div>
+                        <div class="stat-label">Internships (IITs) and Certifications</div>
+                    </div>
+<!--                    <div class="certification-card">-->
+<!--                        <div class="cert-badge">-->
+<!--                            <span class="cert-title">SAP Certified Associate</span>-->
+<!--                            <span class="cert-subtitle">Back-End Developer - ABAP Cloud</span>-->
+<!--                        </div>-->
+<!--                        <a href="https://www.credily.com/id/by8ibcc9qic" target="_blank" class="cert-link">View Certificate</a>-->
+<!--                    </div>-->
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="section education-section">
+    <section id="education" class="education">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Education</h2>
-                <div class="section-subtitle">My academic journey</div>
+                <p class="section-subtitle">My academic journey</p>
             </div>
-            <div class="timeline">
+            <div class="education__timeline">
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                    <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <h3>Master in Computer Application (MCA)</h3>
                         <h4>College of IT & Management Education (CIME), Bhubaneswar</h4>
-                        <p class="timeline-period">2024 – Present</p>
-                        <p class="timeline-details">Current SGPA: 8.17/10 (2nd Semester)</p>
+                        <span class="timeline-period">2024 – Present</span>
+<!--                        <p class="timeline-grade">Current SGPA: 8.17/10 [2nd Semester]</p>-->
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                    <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <h3>B.Sc in Computer Science</h3>
                         <h4>Prananath (Autonomous) College, Khordha</h4>
-                        <p class="timeline-period">2021 – 2024</p>
-                        <p class="timeline-details">CGPA: 8.53</p>
+                        <span class="timeline-period">2021 – 2024</span>
+<!--                        <p class="timeline-grade">CGPA: 8.53</p>-->
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                    <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <h3>Higher Secondary (ISC)</h3>
                         <h4>Seventh-Day Adventist Higher Secondary School, Khordha</h4>
-                        <p class="timeline-period">2021</p>
-                        <p class="timeline-details">Percentage: 84.2%</p>
+                        <span class="timeline-period">2021</span>
+<!--                        <p class="timeline-grade">Percentage: 84.2%</p>-->
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                    <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <h3>Secondary (ICSE)</h3>
                         <h4>Seventh-Day Adventist Higher Secondary School, Khordha</h4>
-                        <p class="timeline-period">2019</p>
-                        <p class="timeline-details">Percentage: 80.33%</p>
+                        <span class="timeline-period">2019</span>
+<!--                        <p class="timeline-grade">Percentage: 80.33%</p>-->
                     </div>
                 </div>
             </div>
@@ -149,34 +152,29 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section skills-section">
+    <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Skills & Technologies</h2>
-                <div class="section-subtitle">-</div>
-                <div class="section-subtitle">Full-Stack Developer</div>
-                <div class="section-subtitle">-</div>
-                <div class="section-subtitle">MERN / MEAN stack</div>
-                <div class="section-subtitle">-</div>
-                <div class="section-subtitle">Python Automation</div>
+                <p class="section-subtitle">My technical expertise</p>
             </div>
-            <div class="skills-container">
+            <div class="skills__categories">
                 <div class="skill-category">
                     <h3>Languages</h3>
-                    <div class="skill-tags">
+                    <div class="skill-items">
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">Java</span>
                         <span class="skill-tag">JavaScript</span>
                         <span class="skill-tag">SQL</span>
                         <span class="skill-tag">Shell Script (bash)</span>
                         <span class="skill-tag">Solidity</span>
-                        <span class="skill-tag">C (translation ready)</span>
+                        <span class="skill-tag">C</span>
                         <span class="skill-tag">SAP ABAP</span>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3>Frameworks</h3>
-                    <div class="skill-tags">
+                    <div class="skill-items">
                         <span class="skill-tag">Flask</span>
                         <span class="skill-tag">Express</span>
                         <span class="skill-tag">Node.js</span>
@@ -185,225 +183,182 @@
                         <span class="skill-tag">SAP GUI</span>
                     </div>
                 </div>
-
                 <div class="skill-category">
                     <h3>Tools</h3>
-                    <div class="skill-tags">
+                    <div class="skill-items">
                         <span class="skill-tag">Git</span>
                         <span class="skill-tag">GitHub</span>
                         <span class="skill-tag">REST APIs</span>
                         <span class="skill-tag">Bootstrap</span>
                         <span class="skill-tag">Tailwind CSS</span>
                         <span class="skill-tag">React.js</span>
-                        <span class="skill-tag">BeautifulSoup</span>
-                        <span class="skill-tag">Selenium</span>
                     </div>
+                </div>
+            </div>
+            <div class="skills__specialties">
+                <div class="specialty-card">
+                    <h4>Full-Stack Developer</h4>
+                    <p>MERN / MEAN stack</p>
+                </div>
+                <div class="specialty-card">
+                    <h4>Python Automation</h4>
+                    <p>Web scraping & automation</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section projects-section">
+    <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Projects</h2>
-                <div class="section-subtitle">Things I've built</div>
+                <p class="section-subtitle">Things I've built</p>
             </div>
-            <div class="projects-grid">
+            <div class="projects__grid">
                 <div class="project-card">
-                    <div class="project-header">
-                        <a href="https://vn-dyn-nu.vercel.app/">
-                            <h3>VnDyn: Hub for Street Food Vendor & Resource Retailer</h3>
-                        </a>
-                        <div class="project-links">
-                            <a href="https://github.com/gitgyana/VnDyn" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://vn-dyn-nu.vercel.app/" target="_blank" class="project-link">
-                                <i class="fa-solid fa-circle-play"></i>
-                            </a>
+                    <div class="project-card__content">
+                        <h3>VnDyn: Hub for Street Food Vendor & Resource Retailer</h3>
+                        <p>VnDyn is a fully client-side React application designed to enable seamless interaction between Street Food Vendors, Resource Providers (Suppliers), Retailers to Vendors, and Admins.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React.js</span>
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">HTML/CSS/JS</span>
                         </div>
-                    </div>
-                    <a href="https://vn-dyn-nu.vercel.app/">
-                        <p class="project-description">VnDyn is a fully client-side React application designed to enable seamless interaction between Street Food Vendors, Resource Providers (Suppliers), Retailers to Vendors, and Admins.</p>
-                    </a>
-                    <div class="project-tech">
-                        <span class="tech-tag">React.js</span>
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">HTML/CSS/JS</span>
+                        <div class="project-links">
+                            <a href="https://github.com/gitgyana/VnDyn" target="_blank" class="project-link">GitHub</a>
+                            <a href="https://vn-dyn-nu.vercel.app/" target="_blank" class="project-link">Demo</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
+                    <div class="project-card__content">
                         <h3>CryptPe: Decentralized Hybrid Payment Gateway</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/gitgyana/CryptPe/" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
+                        <p>Combined UPI and crypto transactions into one unified platform. Built UPI & crypto payment gateway and metadata logger in React Native with blockchain integration.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React Native</span>
+                            <span class="project-tag">Blockchain</span>
+                            <span class="project-tag">Solidity</span>
+                            <span class="project-tag">UPI</span>
                         </div>
-                    </div>
-                    <p class="project-description">Combined UPI and crypto transactions into one unified platform. Built UPI & crypto payment gateway and metadata logger in React Native with blockchain integration.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">React Native</span>
-                        <span class="tech-tag">Blockchain</span>
-                        <span class="tech-tag">Solidity</span>
-                        <span class="tech-tag">UPI</span>
+                        <div class="project-links">
+                            <a href="https://github.com/gitgyana/CryptPe" target="_blank" class="project-link">GitHub</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
+                    <div class="project-card__content">
                         <h3>HeritEdge: Bhubaneswar Local Experience App</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/gitgyana/HeritEdge/" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
+                        <p>Full-stack React Native + Python Flask app enhancing local tourism. Includes user interest profiling, personalized suggestions, interactive maps, and cultural insights.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React Native</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Flask</span>
+                            <span class="project-tag">Maps API</span>
                         </div>
-                    </div>
-                    <p class="project-description">Full-stack React Native + Python Flask app enhancing local tourism. Includes user interest profiling, personalized suggestions, interactive maps, and cultural insights.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">React Native</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">Maps API</span>
+                        <div class="project-links">
+                            <a href="https://github.com/gitgyana/HeritEdge" target="_blank" class="project-link">GitHub</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
-                        <a href="https://ginger-beta.vercel.app/">
-                            <h3>Ginger: Personalized AI Chatbot</h3>
-                        </a>
-                        <div class="project-links">
-                            <a href="https://github.com/gitgyana/ginger" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://ginger-beta.vercel.app/" target="_blank" class="project-link">
-                                <i class="fa-solid fa-circle-play"></i>
-                            </a>
+                    <div class="project-card__content">
+                        <h3>Ginger: Personalized AI Chatbot</h3>
+                        <p>A responsive, animated AI chatbot powered by IBM Watson Assistant, built with Flask (Python), MongoDB, and a modern HTML/JS/CSS frontend.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python (Flask)</span>
+                            <span class="project-tag">IBM Watson Assistant</span>
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">HTML/CSS/JS</span>
                         </div>
-                    </div>
-                    <a href="https://ginger-beta.vercel.app/">
-                        <p class="project-description">A responsive, animated AI chatbot powered by IBM Watson Assistant, built with Flask (Python), MongoDB, and a modern HTML/JS/CSS frontend.</p>
-                    </a>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python (Flask)</span>
-                        <span class="tech-tag">IBM Watson Assistant</span>
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">HTML/CSS/JS</span>
+                        <div class="project-links">
+                            <a href="https://github.com/gitgyana/ginger" target="_blank" class="project-link">GitHub</a>
+                            <a href="https://ginger-beta.vercel.app/" target="_blank" class="project-link">Demo</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
+                    <div class="project-card__content">
                         <h3>Scrato [WIP]</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/gitgyana/Scrato" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
+                        <p>[Work In Progress] It's just a thought of automating web stuffs.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Selenium</span>
+                            <span class="project-tag">BeautifulSoup</span>
+                            <span class="project-tag">Shell script (bash)</span>
                         </div>
-                    </div>
-                    <p class="project-description">[Work In Progress] It's just a thought of automating web stuffs.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Selenium</span>
-                        <span class="tech-tag">BeautifulSoup</span>
-                        <span class="tech-tag">Shell script (bash)</span>
+                        <div class="project-links">
+                            <a href="https://github.com/gitgyana/Scrato" target="_blank" class="project-link">GitHub</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="project-card placeholder-card">
-                    <div class="project-header">
-                        <a href="https://github.com/gitgyana?tab=repositories">
-                            <h3>... and many more projects</h3>
-                        </a>
+                <div class="project-card project-card--more">
+                    <div class="project-card__content">
+                        <h3>. . . and many more projects</h3>
+                        <p>Explore more of my work on my GitHub repository, including projects developed during hackathons.</p>
                         <div class="project-links">
-                            <a href="https://github.com/gitgyana?tab=repositories" target="_blank" class="project-link">
-                                <i class="fa-solid fa-circle-play"></i>
-                            </a>
+                            <a href="https://github.com/gitgyana?tab=repositories" target="_blank" class="project-link">Click Here</a>
                         </div>
                     </div>
-                    <a href="https://github.com/gitgyana?tab=repositories">
-                        <p class="project-description">Explore more of my work on my GitHub repository, including projects developed during hackathons.</p>
-                    </a>
-                    <div class="project-tech">
-                        <a href="https://github.com/gitgyana?tab=repositories">
-                            <span class="tech-tag">Click Here</span>
-                        </a>
-                    </div>
                 </div>
-<!--                <div class="project-card placeholder-card">-->
-<!--                    <div class="project-header">-->
-<!--                        <h3>Another Project Title</h3>-->
-<!--                        <div class="project-links">-->
-<!--                            <span class="project-link placeholder-link" title="Add GitHub link">-->
-<!--                                <i class="fab fa-github"></i>-->
-<!--                            </span>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <p class="project-description">Another placeholder for projects. Edit the JavaScript data to add real projects and remove these placeholders.</p>-->
-<!--                    <div class="project-tech">-->
-<!--                        <span class="tech-tag placeholder-tag">Framework</span>-->
-<!--                        <span class="tech-tag placeholder-tag">Database</span>-->
-<!--                        <span class="tech-tag placeholder-tag">Tools</span>-->
-<!--                    </div>-->
-<!--                </div>-->
             </div>
         </div>
     </section>
 
     <!-- Achievements Section -->
-    <section id="achievements" class="section achievements-section">
+    <section id="achievements" class="achievements">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Achievements & Experience</h2>
-                <div class="section-subtitle">Milestones and recognitions</div>
+                <p class="section-subtitle">Milestones and recognitions</p>
             </div>
-            <div class="achievements-grid">
+            <div class="achievements__content">
                 <div class="achievement-category">
-                    <h3><i class="fas fa-trophy"></i> Achievements</h3>
-                    <div class="achievement-list">
-                        <div class="achievement-item">
-                            <h4>HackForge x Build With AI 3.0 (2025)</h4>
+                    <h3>Hackathons</h3>
+                    <div class="achievement-items">
+                        <div class="achievement-card">
+                            <h4>HackForge x Build With AI 3.0</h4>
                             <p>RCM College</p>
+                            <span class="achievement-year">2025</span>
                         </div>
-                        <div class="achievement-item">
-                            <h4>Jazzee T$O Hackathon (2025)</h4>
+                        <div class="achievement-card">
+                            <h4>Jazzee T$O Hackathon</h4>
                             <p>IIT Bhubaneswar</p>
+                            <span class="achievement-year">2025</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="achievement-category">
-                    <h3><i class="fa-solid fa-check-double"></i> Certifications</h3>
-                    <div class="achievement-list">
-                        <a href="https://www.credly.com/badges/d32ee989-1b29-465b-8864-fca8e5a16ce1" target="_blank">
-                            <div class="achievement-item">
-                                <h4>SAP Certified Associate</h4>
-                                <p>Back-End Developer – ABAP Cloud</p>
-                            </div>
-                        </a>
-                        <a href="https://gdgcloud.codenomix.com//view-cert.php?id=230" target="_blank">
-                            <div class="achievement-item">
-                                <h4>Google Cloud Community Day</h4>
-                                <p>Bhubaneswar 2025</p>
-                            </div>
-                        </a>
+                    <h3>Certifications</h3>
+                    <div class="achievement-items">
+                        <div class="achievement-card">
+                            <h4>SAP Certified Associate</h4>
+                            <p>Back-End Developer – ABAP Cloud</p>
+<!--                            <a href="https://www.credily.com/id/by8ibcc9qic" target="_blank" class="cert-link">View Certificate</a>-->
+                        </div>
+                        <div class="achievement-card">
+                            <h4>Google Cloud Community Day</h4>
+                            <p>Bhubaneswar 2025</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="achievement-category">
-                    <h3><i class="fas fa-briefcase"></i> Internships</h3>
-                    <div class="achievement-list">
-                        <div class="achievement-item">
+                    <h3>Internships</h3>
+                    <div class="achievement-items">
+                        <div class="achievement-card">
                             <h4>FITT IIT Delhi</h4>
                             <p>AI Powered Blockchain Builder</p>
                         </div>
-                        <div class="achievement-item">
+                        <div class="achievement-card">
                             <h4>CAC IIT Guwahati</h4>
-                            <p>Data Analyst</p>
+                            <p>Data Analyst (Summer Analyst 2025)</p>
                         </div>
                     </div>
                 </div>
@@ -411,64 +366,147 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
+    <!-- Contact Section - Completely Redesigned -->
+    <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Get In Touch</h2>
-                <div class="section-subtitle">Let's connect and collaborate</div>
+                <p class="section-subtitle">Let's connect and collaborate</p>
             </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item" data-copy="gyana.omni@gmail.com">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p>gyana.omni@gmail.com</p>
-                        </div>
-                        <div class="copy-tooltip">Click to copy</div>
-                    </div>
-                    <a href="https://www.linkedin.com/in/gyanapriyadarshi/" target="_blank" title="LinkedIn">
-                        <div class="contact-item" data-copy="https://www.linkedin.com/in/gyanapriyadarshi/">
-                            <div class="contact-icon">
-                                <i class="fab fa-linkedin"></i>
+            
+            <div class="contact__wrapper">
+                <div class="contact__main">
+                    <div class="contact__info-grid">
+                        <!-- Email Card -->
+                        <div class="contact-card">
+                            <div class="contact-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
                             </div>
-                            <div class="contact-details">
+                            <div class="contact-card__content">
+                                <h4>Email</h4>
+                                <p class="contact-value" data-copy="gyana.career@gmail.com">gyana.career@gmail.com</p>
+                            </div>
+                            <button class="copy-btn" data-copy="gyana.career@gmail.com">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                                </svg>
+                                <span>Copy</span>
+                            </button>
+                        </div>
+
+                        <!-- LinkedIn Card -->
+                        <div class="contact-card">
+                            <div class="contact-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </div>
+                            <div class="contact-card__content">
                                 <h4>LinkedIn</h4>
-                                <p>in/gyanapriyadarshi</p>
+                                <a href="https://linkedin.com/in/gyanapriyadarshi/" target="_blank" class="contact-link">in/gyanapriyadarshi</a>
                             </div>
-                            <div class="copy-tooltip">Click to redirect</div>
+                            <a href="https://linkedin.com/in/gyanapriyadarshi/" target="_blank" class="visit-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 17L17 7"/>
+                                    <path d="M7 7h10v10"/>
+                                </svg>
+                                <span>Visit</span>
+                            </a>
                         </div>
-                    </a>
+
+                        <!-- Location Card -->
+<!--                        <div class="contact-card">-->
+<!--                            <div class="contact-card__icon">-->
+<!--                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">-->
+<!--                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>-->
+<!--                                    <circle cx="12" cy="10" r="3"/>-->
+<!--                                </svg>-->
+<!--                            </div>-->
+<!--                            <div class="contact-card__content">-->
+<!--                                <h4>Location</h4>-->
+<!--                                <p>Khordha, India</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                    </div>
                 </div>
 
-                <div class="social-links">
-                    <a href="https://github.com/gitgyana/" target="_blank" class="social-link" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.instagram.com/gyana.meta/" target="_blank" class="social-link" title="Instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://www.unstop.com/u/gyanapri45385/" target="_blank" class="social-link" title="Unstop">
-<!--                        <i class="fas fa-trophy"></i>-->
-                        <span class="unstop-icon"></span>
-                    </a>
+                <!-- Quick Actions -->
+                <div class="contact__actions">
+                    <div class="quick-actions">
+                        <h3>Quick Actions</h3>
+                        <div class="action-buttons">
+                            <a href="mailto:gyana.career@gmail.com" class="action-btn action-btn--primary">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                Send Email
+                            </a>
+                            <a href="https://linkedin.com/in/gyanapriyadarshi/" target="_blank" class="action-btn action-btn--secondary">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                                Connect on LinkedIn
+                            </a>
+                            <a href="https://github.com/gitgyana/" target="_blank" class="action-btn action-btn--outline">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                                View GitHub
+                            </a>
+                            <a href="https://credly.com/users/gyana-priyadarshi/" target="_blank" class="action-btn action-btn-credly">
+                                <svg x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                                    <path fill="#fb8c00" d="m42,37c0,2.76-2.24,5-5,5H11c-2.76,0-5-2.24-5-5V11c0-2.76,2.24-5,5-5h26c2.76,0,5,2.24,5,5v26Z"></path>
+                                    <path fill="#fff" d="m33.77,27.04c-.71-.5-1.68-.32-2.18.39-2.14,2.96-5.22,5.57-9.58,5.57s-4.62-7.88-2-13c1.61-3.14,3.87-5.73,5.84-5.72,1.39,0,2.18,1.26,1.8,2.6-.46,1.63-.51,2.72-.51,2.81-.04.96.71,1.77,1.68,1.8.02,0,.04.01.07.01.93,0,1.7-.74,1.74-1.68,0-.03.18-3.31,2.78-6.77.63-.84.39-2.07-.57-2.59-.77-.42-1.75-.14-2.27.56-.15.2-.29.39-.42.59-.14.2-.4.27-.62.17-7.7-3.47-12.07,3.86-13.51,7.23-3,7-3,18,5.62,18,7.22,0,10.63-4.75,12.6-7.79.46-.71.27-1.66-.42-2.14-.01,0-.02-.02-.03-.02Z"></path>
+                                </svg>
+                                Credly Achievements
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-container">
+                <div class="social-section">
+<!--                    <h3>Follow Me</h3>-->
+                    <div class="social-links">
+                        <a href="https://www.kaggle.com/gyanapriyadarshi" target="_blank" class="social-link" data-platform="kaggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 32 32" fill="currentColor">
+                                <path d="M 10.351562 4 C 10.117563 4 10 4.1165625 10 4.3515625 L 10 27.644531 C 10 27.878531 10.116563 27.996094 10.351562 27.996094 L 12.648438 27.996094 C 12.882437 27.996094 13.001953 27.879531 13.001953 27.644531 L 13.001953 22.808594 L 14.810547 21.085938 L 20.048828 27.75 C 20.190828 27.915 20.354922 28 20.544922 28 L 23.716797 28 C 23.882797 28 23.977 27.952422 24 27.857422 L 23.933594 27.498047 L 17.023438 18.910156 L 23.650391 12.498047 C 23.773391 12.370047 23.730438 12 23.398438 12 L 20.117188 12 C 19.951187 12 19.785141 12.085953 19.619141 12.251953 L 13 18.974609 L 13 4.3515625 C 13 4.1165625 12.883437 4 12.648438 4 L 10.351562 4 z"></path>
+                            </svg>
+                            <span>Kaggle</span>
+                        </a>
+                        <a href="https://instagram.com/gyana.meta" target="_blank" class="social-link" data-platform="instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://twitter.com/TweetJoyel" target="_blank" class="social-link" data-platform="twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                            <span>Twitter</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Gyana Priyadarshi. Made with <span class="heart">❤️</span> and <span class="code">&lt;/&gt;</span></p>
-        </div>
+        <p>© 2025 Gyana Priyadarshi. Made with ❤️ and &lt;/&gt;</p>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
