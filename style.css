@@ -1803,7 +1803,7 @@ section {
 }
 
 .social-container{
-  margin: 0 0 2rem 0;
+  margin: 2rem 0 2rem 0;
 }
 
 .social-section {
@@ -2005,7 +2005,8 @@ section {
     right: 0;
     height: 100vh;
     width: 280px;
-    background: rgba(250, 251, 255, 0.98);
+    /*background: rgba(250, 251, 255, 0.98); !*EXTRA*!*/
+    background: #1e1f22;
     backdrop-filter: blur(20px);
     flex-direction: column;
     justify-content: center;
@@ -2061,6 +2062,11 @@ section {
 }
 
 @media (max-width: 768px) {
+  /*EXTRA*/
+  .nav {
+    background: var(--bg-glass);
+  }
+
   section {
     padding: var(--space-16) 0;
   }
@@ -2087,7 +2093,13 @@ section {
   .social-links {
     grid-template-columns: 1fr;
   }
-  
+
+  /*EXTRA*/
+  .quick-actions h3 {
+    text-align: center;
+    justify-content: center;
+  }
+
   .action-buttons {
     width: 100%;
   }
