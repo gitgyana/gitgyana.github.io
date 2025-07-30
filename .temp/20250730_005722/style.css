@@ -1729,12 +1729,25 @@ section {
   left: 100%;
 }
 
+/*.footer {*/
+/*  text-align: center;*/
+/*  margin-top: var(--space-32);*/
+/*  padding: var(--space-32) 0;*/
+/*  border-top: 1px solid rgba(var(--color-teal-500-rgb), 0.2);*/
+/*  color: var(--color-text-secondary);*/
+/*}*/
+
 .footer {
-  text-align: center;
-  margin-top: var(--space-32);
-  padding: var(--space-32) 0;
-  border-top: 1px solid rgba(var(--color-teal-500-rgb), 0.2);
+  background: var(--color-slate-900);
   color: var(--color-text-secondary);
+  padding: var(--space-24) 0;
+  text-align: center;
+  border-top: 1px solid var(--color-border);
+}
+
+.footer p {
+  margin: 0;
+  font-size: var(--font-size-sm);
 }
 
 /* Responsive Design */
