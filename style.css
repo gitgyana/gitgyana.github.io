@@ -750,6 +750,7 @@ select.form-control {
   --text-light: #94A3B8;
   --border-light: #E2E8F0;
   --border-lighter: #F1F5F9;
+  --border-dark: rgba(43, 45, 48, 0.69); /*EXTRA*/
   --shadow-light: rgba(71, 85, 105, 0.1);
   --shadow-medium: rgba(71, 85, 105, 0.15);
   --shadow-strong: rgba(71, 85, 105, 0.25);
@@ -808,11 +809,9 @@ select.form-control {
 
 /*EXTRA*/
 @media (prefers-color-scheme: light) {
-  select.form-control {
-    background-image: var(--select-caret-dark);
-  }
   :root {
-    --text-primary: rgba(71, 85, 105, 0.25); /*EXTRA*/
+    --text-primary: rgba(43, 45, 48, 0.94);
+    --border-light: rgba(43, 45, 48, 0.69);
   }
 }
 
