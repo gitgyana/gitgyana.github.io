@@ -810,8 +810,8 @@ select.form-control {
 /*EXTRA*/
 @media (prefers-color-scheme: light) {
   :root {
-    --text-primary: rgba(43, 45, 48, 0.94);
-    --border-light: rgba(43, 45, 48, 0.69);
+    --text-primary: rgb(43, 45, 48);
+    --border-light: rgb(64, 64, 64);
   }
 }
 
@@ -1959,6 +1959,13 @@ section {
   color: black;
   transform: translateY(-2px);
   box-shadow: 0 8px 24px var(--shadow-medium);
+}
+
+/*EXTRA*/
+@media (prefers-color-scheme: light) {
+  .action-btn--outline {
+    color: grey;
+  }
 }
 
 .action-btn-credly {
