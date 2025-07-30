@@ -1,4 +1,3 @@
-// Modern Portfolio App - Pure JavaScript with Non-Intrusive Animations
 // Optimized for 60fps performance with requestAnimationFrame
 
 (() => {
@@ -360,7 +359,6 @@
       const handleNavScroll = throttle(() => {
         const scrollY = window.scrollY;
         const opacity = Math.min(scrollY / 100, 1);
-        // this.nav.style.background = `rgba(250, 251, 255, ${0.95 + (opacity * 0.05)})`; //EXTRA
       }, 16);
 
       window.addEventListener('scroll', handleNavScroll);
@@ -681,7 +679,7 @@
     init() {
       this.startFPSMonitor();
       this.optimizeForDevice();
-      this.handleVisibilityChange();
+      // this.handleVisibilityChange(); // Pause and resume animation
     }
 
     startFPSMonitor() {
@@ -694,9 +692,9 @@
           this.lastTime = currentTime;
           
           // Reduce animation quality if FPS drops below 30
-          if (this.fps < 30) {
-            this.reduceAnimations();
-          }
+          // if (this.fps < 30) {
+          //   this.reduceAnimations();
+          // }
         }
         
         requestAnimationFrame(measureFPS);
@@ -718,28 +716,29 @@
       }
     }
 
-    reduceAnimations() {
-      // Disable some animations if performance is poor
-      const complexAnimations = document.querySelectorAll('.floating-shapes, .bg-animation');
-      complexAnimations.forEach(el => {
-        el.style.display = 'none';
-      });
-    }
+    // reduceAnimations() {
+    //   // Disable some animations if performance is poor
+    //   const complexAnimations = document.querySelectorAll('.floating-shapes, .bg-animation');
+    //   complexAnimations.forEach(el => {
+    //     el.style.display = 'none';
+    //   });
+    // }
 
-    handleVisibilityChange() {
-      document.addEventListener('visibilitychange', () => {
-        if (document.hidden) {
-          // Pause animations when tab is not visible
-          const particleSystem = window.particleSystem;
-          if (particleSystem) {
-            particleSystem.destroy();
-          }
-        } else {
-          // Resume animations when tab becomes visible
-          this.initializeAnimations();
-        }
-      });
-    }
+    // handleVisibilityChange() {
+    //   // Pause animations when tab is not visible and resume animations when tab becomes visible
+    //   document.addEventListener('visibilitychange', () => {
+    //     if (document.hidden) {
+    //       // Pause animations when tab is not visible
+    //       const particleSystem = window.particleSystem;
+    //       if (particleSystem) {
+    //         particleSystem.destroy();
+    //       }
+    //     } else {
+    //       // Resume animations when tab becomes visible
+    //       this.initializeAnimations();
+    //     }
+    //   });
+    // }
 
     initializeAnimations() {
       const canvas = document.getElementById('particles-canvas');
