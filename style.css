@@ -507,6 +507,15 @@ select.form-control {
     background-image: var(--select-caret-dark);
   }
 }
+/*EXTRA*/
+@media (prefers-color-scheme: light) {
+  select.form-control {
+    background-image: var(--select-caret-dark);
+  }
+  :root {
+    --text-primary: rgba(71, 85, 105, 0.25); /*EXTRA*/
+  }
+}
 
 /* Also handle data-color-scheme */
 [data-color-scheme="dark"] select.form-control {
