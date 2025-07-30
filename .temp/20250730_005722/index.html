@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gyana Priyadarshi</title>
-    <link rel="icon" href="assets/imgs/GP_LOGO_1.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!--    https://fontawesome.com/icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Background Animation Container -->
+    <div class="bg-animation">
+        <canvas id="particles-canvas"></canvas>
+        <div class="floating-shapes"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav__logo">
-            <img src="assets/imgs/GP_LOGO_1.png" alt="Logo" class="nav-logo-img">
+            <a href="https://www.gyana.org.in/" target="_parent">
+                <img src="assets/imgs/GP_LOGO_1.png" alt="Logo" class="nav-logo-img">
+            </a>
         </div>
         <ul class="nav__links">
             <li><a href="#home" class="nav__link">Home</a></li>
@@ -31,12 +43,6 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero__background">
-            <div class="particles"></div>
-            <div class="gradient-orb gradient-orb--1"></div>
-            <div class="gradient-orb gradient-orb--2"></div>
-            <div class="gradient-orb gradient-orb--3"></div>
-        </div>
         <div class="hero__content">
             <h1 class="hero__title">
                 <span class="hero__name">Gyana Priyadarshi</span>
@@ -47,11 +53,12 @@
                 <span class="cursor">|</span>
             </div>
             <div class="hero__location">
-                <span class="location-icon">📍</span>
+                <span class="location-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </span>
                 <span>Khordha, India</span>
             </div>
             <div class="hero__actions">
-<!--                <a href="#projects" class="btn btn&#45;&#45;primary hero__btn">View My Work</a>-->
                 <a href="#projects" class="btn btn--outline hero__btn">View My Work</a>
                 <a href="#contact" class="btn btn--outline hero__btn">Get In Touch</a>
             </div>
@@ -76,31 +83,21 @@
                     <p>Enthusiastic MCA student with a strong foundation in Python, web development, and software engineering, seeking a challenging role in a reputable organization. Building creative web and mobile applications is my strength. Solving real world problems and always eager to learn and grow with an organization wherever I will work.</p>
                 </div>
                 <div class="about__stats">
-                    <a href="#projects" class="nav__link">
-                        <div class="stat-card">
-                            <div class="stat-number" data-target="15">0</div>
-                            <div class="stat-label">Projects</div>
-                        </div>
-                    </a>
-<!--                    <div class="stat-card">-->
-<!--                        <div class="stat-number" data-target="2">0</div>-->
-<!--                        <div class="stat-label">Internships at IITs</div>-->
-<!--                    </div>-->
-<!--                    <div class="certification-card">-->
-                    <div class="stat-card nav__link">
-                        <div class="cert-badge">
-                            <div class="stat-number" data-target="2">0</div>
-                            <a href="https://certificate.givemycertificate.com/c/2cba9fa9-2a8e-4931-a6b1-40ebae05971c" target="_blank">
-                                <span class="cert-title">Summer Analyst 2025 (IIT Guwahati)</span>
-                            </a>
-                            <span class="cert-subtitle">Data Analyst and Machine Learning</span>
-                            <a href="https://www.credly.com/badges/d32ee989-1b29-465b-8864-fca8e5a16ce1" target="_blank">
-                                <span class="cert-title">SAP Certified Associate</span>
-                            </a>
-                            <span class="cert-subtitle">Back-End Developer - ABAP Cloud</span>
-                        </div>
-<!--                        <a href="https://www.credily.com/id/by8ibcc9qic" target="_blank" class="cert-link">View Certificate</a>-->
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Projects</div>
                     </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="4">0</div>
+                        <div class="stat-label">Internships (IITs) and Certifications</div>
+                    </div>
+<!--                    <div class="certification-card">-->
+<!--                        <div class="cert-badge">-->
+<!--                            <span class="cert-title">SAP Certified Associate</span>-->
+<!--                            <span class="cert-subtitle">Back-End Developer - ABAP Cloud</span>-->
+<!--                        </div>-->
+<!--                        <a href="https://www.credily.com/id/by8ibcc9qic" target="_blank" class="cert-link">View Certificate</a>-->
+<!--                    </div>-->
                 </div>
             </div>
         </div>
@@ -129,7 +126,7 @@
                         <h3>B.Sc in Computer Science</h3>
                         <h4>Prananath (Autonomous) College, Khordha</h4>
                         <span class="timeline-period">2021 – 2024</span>
-                        <p class="timeline-grade">CGPA: 8.53</p>
+<!--                        <p class="timeline-grade">CGPA: 8.53</p>-->
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -138,7 +135,7 @@
                         <h3>Higher Secondary (ISC)</h3>
                         <h4>Seventh-Day Adventist Higher Secondary School, Khordha</h4>
                         <span class="timeline-period">2021</span>
-                        <p class="timeline-grade">Percentage: 84.2%</p>
+<!--                        <p class="timeline-grade">Percentage: 84.2%</p>-->
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -147,7 +144,7 @@
                         <h3>Secondary (ICSE)</h3>
                         <h4>Seventh-Day Adventist Higher Secondary School, Khordha</h4>
                         <span class="timeline-period">2019</span>
-                        <p class="timeline-grade">Percentage: 80.33%</p>
+<!--                        <p class="timeline-grade">Percentage: 80.33%</p>-->
                     </div>
                 </div>
             </div>
@@ -305,7 +302,7 @@
                         <h3>. . . and many more projects</h3>
                         <p>Explore more of my work on my GitHub repository, including projects developed during hackathons.</p>
                         <div class="project-links">
-                            <a href="https://github.com/gitgyana/" target="_blank" class="project-link">Click Here</a>
+                            <a href="https://github.com/gitgyana?tab=repositories" target="_blank" class="project-link">Click Here</a>
                         </div>
                     </div>
                 </div>
@@ -343,12 +340,11 @@
                         <div class="achievement-card">
                             <h4>SAP Certified Associate</h4>
                             <p>Back-End Developer – ABAP Cloud</p>
-                            <a href="https://www.credly.com/badges/d32ee989-1b29-465b-8864-fca8e5a16ce1" target="_blank" class="cert-link">View Certificate</a>
+<!--                            <a href="https://www.credily.com/id/by8ibcc9qic" target="_blank" class="cert-link">View Certificate</a>-->
                         </div>
                         <div class="achievement-card">
                             <h4>Google Cloud Community Day</h4>
                             <p>Bhubaneswar 2025</p>
-                            <a href="https://gdgcloud.codenomix.com//view-cert.php?id=230" target="_blank" class="cert-link">View Certificate</a>
                         </div>
                     </div>
                 </div>
@@ -362,8 +358,7 @@
                         </div>
                         <div class="achievement-card">
                             <h4>CAC IIT Guwahati</h4>
-                            <p>Data Analyst</p>
-                            <a href="https://certificate.givemycertificate.com/c/2cba9fa9-2a8e-4931-a6b1-40ebae05971c" target="_blank" class="cert-link">View Certificate</a>
+                            <p>Data Analyst (Summer Analyst 2025)</p>
                         </div>
                     </div>
                 </div>
@@ -371,39 +366,145 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section - Completely Redesigned -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Get In Touch</h2>
                 <p class="section-subtitle">Let's connect and collaborate</p>
             </div>
-            <div class="contact__content">
-                <div class="contact__info">
-                    <div class="contact-item">
-                        <h4>Email</h4>
-                        <span class="contact-value" data-copy="gyana.career@gmail.com">gyana.career@gmail.com</span>
-                        <button class="copy-btn">Copy</button>
-                    </div>
-                    <div class="contact-item">
-                        <h4>LinkedIn</h4>
-                        <a href="https://www.linkedin.com/in/gyanapriyadarshi/" target="_blank" class="contact-link">in/gyanapriyadarshi</a>
+            
+            <div class="contact__wrapper">
+                <div class="contact__main">
+                    <div class="contact__info-grid">
+                        <!-- Email Card -->
+                        <div class="contact-card">
+                            <div class="contact-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-card__content">
+                                <h4>Email</h4>
+                                <p class="contact-value" data-copy="gyana.career@gmail.com">gyana.career@gmail.com</p>
+                            </div>
+                            <button class="copy-btn" data-copy="gyana.career@gmail.com">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                                </svg>
+                                <span>Copy</span>
+                            </button>
+                        </div>
+
+                        <!-- LinkedIn Card -->
+                        <div class="contact-card">
+                            <div class="contact-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </div>
+                            <div class="contact-card__content">
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com/in/gyanapriyadarshi/" target="_blank" class="contact-link">in/gyanapriyadarshi</a>
+                            </div>
+                            <a href="https://linkedin.com/in/gyanapriyadarshi/" target="_blank" class="visit-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 17L17 7"/>
+                                    <path d="M7 7h10v10"/>
+                                </svg>
+                                <span>Visit</span>
+                            </a>
+                        </div>
+
+                        <!-- Location Card -->
+<!--                        <div class="contact-card">-->
+<!--                            <div class="contact-card__icon">-->
+<!--                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">-->
+<!--                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>-->
+<!--                                    <circle cx="12" cy="10" r="3"/>-->
+<!--                                </svg>-->
+<!--                            </div>-->
+<!--                            <div class="contact-card__content">-->
+<!--                                <h4>Location</h4>-->
+<!--                                <p>Khordha, India</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
                     </div>
                 </div>
-                <div class="social-links">
-                    <a href="https://github.com/gitgyana" target="_blank" class="social-link">GitHub</a>
-                    <a href="https://www.linkedin.com/in/gyanapriyadarshi/" target="_blank" class="social-link">LinkedIn</a>
-                    <a href="https://instagram.com/gyana.meta" target="_blank" class="social-link">Instagram</a>
-                    <a href="https://twitter.com/TweetJoyel" target="_blank" class="social-link">Twitter</a>
+
+                <!-- Quick Actions -->
+                <div class="contact__actions">
+                    <div class="quick-actions">
+                        <h3>Quick Actions</h3>
+                        <div class="action-buttons">
+                            <a href="mailto:gyana.career@gmail.com" class="action-btn action-btn--primary">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                Send Email
+                            </a>
+                            <a href="https://linkedin.com/in/gyanapriyadarshi/" target="_blank" class="action-btn action-btn--secondary">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                                Connect on LinkedIn
+                            </a>
+                            <a href="https://github.com/gitgyana/" target="_blank" class="action-btn action-btn--outline">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                                View GitHub
+                            </a>
+                            <a href="https://credly.com/users/gyana-priyadarshi/" target="_blank" class="action-btn action-btn-credly">
+                                <svg x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                                    <path fill="#fb8c00" d="m42,37c0,2.76-2.24,5-5,5H11c-2.76,0-5-2.24-5-5V11c0-2.76,2.24-5,5-5h26c2.76,0,5,2.24,5,5v26Z"></path>
+                                    <path fill="#fff" d="m33.77,27.04c-.71-.5-1.68-.32-2.18.39-2.14,2.96-5.22,5.57-9.58,5.57s-4.62-7.88-2-13c1.61-3.14,3.87-5.73,5.84-5.72,1.39,0,2.18,1.26,1.8,2.6-.46,1.63-.51,2.72-.51,2.81-.04.96.71,1.77,1.68,1.8.02,0,.04.01.07.01.93,0,1.7-.74,1.74-1.68,0-.03.18-3.31,2.78-6.77.63-.84.39-2.07-.57-2.59-.77-.42-1.75-.14-2.27.56-.15.2-.29.39-.42.59-.14.2-.4.27-.62.17-7.7-3.47-12.07,3.86-13.51,7.23-3,7-3,18,5.62,18,7.22,0,10.63-4.75,12.6-7.79.46-.71.27-1.66-.42-2.14-.01,0-.02-.02-.03-.02Z"></path>
+                                </svg>
+                                Credly Achievements
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-container">
+                <div class="social-section">
+<!--                    <h3>Follow Me</h3>-->
+                    <div class="social-links">
+                        <a href="https://www.kaggle.com/gyanapriyadarshi" target="_blank" class="social-link" data-platform="kaggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 32 32" fill="currentColor">
+                                <path d="M 10.351562 4 C 10.117563 4 10 4.1165625 10 4.3515625 L 10 27.644531 C 10 27.878531 10.116563 27.996094 10.351562 27.996094 L 12.648438 27.996094 C 12.882437 27.996094 13.001953 27.879531 13.001953 27.644531 L 13.001953 22.808594 L 14.810547 21.085938 L 20.048828 27.75 C 20.190828 27.915 20.354922 28 20.544922 28 L 23.716797 28 C 23.882797 28 23.977 27.952422 24 27.857422 L 23.933594 27.498047 L 17.023438 18.910156 L 23.650391 12.498047 C 23.773391 12.370047 23.730438 12 23.398438 12 L 20.117188 12 C 19.951187 12 19.785141 12.085953 19.619141 12.251953 L 13 18.974609 L 13 4.3515625 C 13 4.1165625 12.883437 4 12.648438 4 L 10.351562 4 z"></path>
+                            </svg>
+                            <span>Kaggle</span>
+                        </a>
+                        <a href="https://instagram.com/gyana.meta" target="_blank" class="social-link" data-platform="instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://twitter.com/TweetJoyel" target="_blank" class="social-link" data-platform="twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                            <span>Twitter</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Gyana Priyadarshi. Made with ❤️ and &lt;/&gt;</p>
-        </div>
+        <p>© 2025 Gyana Priyadarshi. Made with ❤️ and &lt;/&gt;</p>
     </footer>
 
     <script src="app.js"></script>
