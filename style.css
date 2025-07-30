@@ -731,26 +731,20 @@ select.form-control {
   border: 1px solid var(--color-border-secondary);
 }
 
-@font-face {
-  font-family: 'FKGroteskNeue';
-  src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2')
-    format('woff2');
-}
 
-/* END PERPLEXITY DESIGN SYSTEM */
-/* Light, friendly color palette inspired by MKBHD/Dave2D */
+/* END DESIGN SYSTEM */
+
+/* Light, friendly color palette inspired by MKBHD and Dave2D */
 :root {
   /* Custom Color Palette - Light & Friendly */
   --bg-primary: #FAFBFF;
   --bg-secondary: rgba(255, 255, 255, 0.95);
-  /*--bg-glass: rgba(255, 255, 255, 0.85); !*EXTRA*!*/
   --bg-glass: linear-gradient(135deg, rgba(255, 169, 135, 0.1), rgba(112, 193, 179, 0.1));
   --primary-blue: #4F8CFF;
   --primary-blue-hover: #3A7AFF;
   --secondary-mint: #70C1B3;
   --accent-peach: #FFA987;
   --accent-peach-hover: #FF9474;
-  /*--text-primary: #2D3748; !*EXTRA*!*/
   --text-primary: rgba(255, 255, 255, 0.85);
   --text-secondary: #64748B;
   --text-light: #94A3B8;
@@ -826,7 +820,6 @@ html {
 
 body {
   font-family: var(--font-family);
-  /*background: var(--bg-primary); !*EXTRA*!*/
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
@@ -904,15 +897,19 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: var(--space-4) var(--space-8);
-  /*EXTRA*/
-  /*background: rgba(250, 251, 255, 0.95);*/
-  /*backdrop-filter: blur(20px);*/
-  /*border-bottom: 1px solid var(--border-lighter);*/
   background: rgba(var(--color-slate-900-rgb), 0.1);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(var(--color-teal-500-rgb), 0.1);
-
   transition: all var(--transition-normal);
+}
+
+.nav-logo-img {
+  height: 2.5rem;
+  width: auto;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
 }
 
 .nav__logo {
@@ -1677,16 +1674,12 @@ section {
   font-weight: var(--font-weight-semibold);
 }
 
-/* Contact Section - Completely Redesigned */
-.contact {
-  background: linear-gradient(135deg, rgba(79, 140, 255, 0.03), rgba(112, 193, 179, 0.03));
-}
-
+/* Contact Section*/
 .contact__wrapper {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: var(--space-12);
-  margin-bottom: var(--space-2); /*EXTRA*/
+  margin-bottom: var(--space-2);
 }
 
 .contact__info-grid {
@@ -1800,7 +1793,6 @@ section {
   height: 14px;
 }
 
-/*EXTRA*/
 .social-container{
   margin: 0 0 2rem 0;
 }
@@ -1900,7 +1892,7 @@ section {
 .action-buttons {
   display: flex;
   flex-direction: column;
-  gap: var(--space-2); /*EXTRA*/
+  gap: var(--space-2);
 }
 
 .action-btn {
@@ -1928,34 +1920,34 @@ section {
 
 .action-btn--primary:hover {
   background: var(--primary-blue-hover);
-  color: white; /*EXTRA*/
+  color: white;
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(79, 140, 255, 0.35);
 }
 
 .action-btn--secondary {
-  background: rgba(63, 89, 129, 1); /*var(--secondary-mint); EXTRA*/
+  background: rgba(63, 89, 129, 1);
   color: white;
   box-shadow: 0 4px 12px rgba(112, 193, 179, 0.25);
 }
 
 .action-btn--secondary:hover {
-  background: rgba(63, 89, 129, 0.9); /*#5CAF9F; EXTRA*/
+  background: rgba(63, 89, 129, 0.9);
   transform: translateY(-2px);
-  color: white; /*EXTRA*/
+  color: white;
   box-shadow: 0 8px 24px rgba(112, 193, 179, 0.35);
 }
 
 .action-btn--outline {
-  background: var(--text-primary); /*--bg-glass EXTRA*/
-  color: black;/*var(--text-primary); EXTRA */
+  background: var(--text-primary);
+  color: black;
   border: 2px solid var(--border-light);
   backdrop-filter: blur(10px);
 }
 
 .action-btn--outline:hover {
   background: var(--text-primary);
-  color: black; /*white; EXTRA*/
+  color: black;
   transform: translateY(-2px);
   box-shadow: 0 8px 24px var(--shadow-medium);
 }
@@ -1980,7 +1972,6 @@ section {
 .footer {
   text-align: center;
   padding: var(--space-8) 0;
-  /*border-top: 1px solid var(--border-lighter); !*EXTRA*!*/
   border-top: 1px solid rgba(var(--color-teal-500-rgb), 0.1);
   color: var(--text-light);
   font-size: var(--font-size-sm);
@@ -2211,15 +2202,4 @@ section {
 .slide-in-right.animate {
   opacity: 1;
   transform: translateX(0);
-}
-
-
-/*EXTRA*/
-.nav-logo-img {
-  height: 2.5rem;
-  width: auto;
-  object-fit: contain;
-  display: flex;
-  align-items: center;
-  border-radius: 50%;
 }
