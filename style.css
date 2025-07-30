@@ -1934,13 +1934,13 @@ section {
 }
 
 .action-btn--secondary {
-  background: var(--secondary-mint);
+  background: rgba(63, 89, 129, 1); /*var(--secondary-mint); EXTRA*/
   color: white;
   box-shadow: 0 4px 12px rgba(112, 193, 179, 0.25);
 }
 
 .action-btn--secondary:hover {
-  background: #5CAF9F;
+  background: rgba(63, 89, 129, 0.9); /*#5CAF9F; EXTRA*/
   transform: translateY(-2px);
   color: white; /*EXTRA*/
   box-shadow: 0 8px 24px rgba(112, 193, 179, 0.35);
@@ -1980,9 +1980,14 @@ section {
 .footer {
   text-align: center;
   padding: var(--space-8) 0;
-  border-top: 1px solid var(--border-lighter);
+  /*border-top: 1px solid var(--border-lighter); !*EXTRA*!*/
+  border-top: 1px solid rgba(var(--color-teal-500-rgb), 0.1);
   color: var(--text-light);
   font-size: var(--font-size-sm);
+}
+
+.footer p{
+  margin: 0;
 }
 
 /* Responsive Design */
