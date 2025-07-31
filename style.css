@@ -1964,7 +1964,7 @@ section {
 /*EXTRA*/
 @media (prefers-color-scheme: light) {
   .action-btn--outline {
-    color: grey;
+    color: white; /*grey; EXTRA*/
   }
 }
 
