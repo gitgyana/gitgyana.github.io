@@ -1068,7 +1068,9 @@ body {
 .hero__scroll {
   position: absolute;
   bottom: var(--space-8);
-  left: 50%;
+  /*left: 50%; !*EXTRA*!*/
+  align-items: center;
+  justify-content: center;
   transform: translateX(-50%);
   opacity: 0;
   animation: fadeInUp 1s ease-out 1.5s forwards;
@@ -1265,6 +1267,17 @@ section {
 .about__text.animate {
   opacity: 1;
   transform: translateX(0);
+}
+
+.about_desc {
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+@media (max-width: 1024px) {
+  .about_desc {
+    margin: 0 0 var(--space-4) 0;
+  }
 }
 
 .about__stats {
@@ -1904,6 +1917,14 @@ section {
   font-weight: var(--font-weight-semibold);
 }
 
+/*EXTRA*/
+@media (max-width: 1024px) {
+  .quick-actions h3 {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
 .action-buttons {
   display: flex;
   flex-direction: column;
@@ -2032,6 +2053,7 @@ section {
   
   .nav__toggle {
     display: flex;
+    margin: var(--space-2);
   }
   
   .nav__toggle--active span:nth-child(1) {
@@ -2100,11 +2122,6 @@ section {
   
   .social-links {
     grid-template-columns: 1fr;
-  }
-
-  .quick-actions h3 {
-    text-align: center;
-    justify-content: center;
   }
 
   .action-buttons {
